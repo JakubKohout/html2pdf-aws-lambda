@@ -1,0 +1,14 @@
+{
+    "name": "html2pdf-aws-lambda",
+    "version": "1.0.0",
+    "description": "HTML 2 PDF via wkhtmltopdf",
+    "main": "index.js",
+    "author": "Shipito LLC",
+    "license": "ISC",
+    "devDependencies": {
+        "node-lambda": "^0.7.1"
+    },
+    "dependencies": {
+        "wkhtmltopdf": "^0.1.5"
+    }
+}
