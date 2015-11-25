@@ -6,7 +6,8 @@ process.env['PATH'] = process.env['PATH'] + ':' + process.env['LAMBDA_TASK_ROOT'
 exports.handler = function(event, context) {
 	var options = {
 		pageSize: event.pageSize || 'A4', // A5/A4/A3
-		orientation: event.orientation || 'Portrait' // Portrait/Landscape
+		orientation: event.orientation || 'Portrait', // Portrait/Landscape
+		grayscale: typeof event.grayscale == "undefined" ? true : event.grayscale
 	};
 	
 	if (event.html) {
